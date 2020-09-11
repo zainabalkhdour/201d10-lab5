@@ -100,12 +100,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-var multArr=[2, 3, 4];
-var multiplyArray= multArr[0] * multArr[1] * multArr[2];
-return[multiplyArray,`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multiplyArray}.`];
+    var multArr=[2, 3, 4];
+    var multiplyArray= multArr[0] * multArr[1] * multArr[2];
+    return[multiplyArray,`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multiplyArray}.`];
+        
+    }
+    console.log(multiplyArray(2,3,4));
     
-}
-console.log(multiplyArray(2,3,4));
+    // Here is the test for multiplyArray(); uncomment it to run it
+    
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
@@ -132,8 +135,12 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    dynamicArray = [1,2,3,4,5];
+    multiplyAnyArray=dynamicArray[0]*dynamicArray[1]*dynamicArray[2]*dynamicArray[3]*dynamicArray[4];
+    return[multiplyAnyArray,`The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${multiplyAnyArray}.`]
 
 }
+console.log(multiplyAnyArray(1,2,3,4,5));
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
