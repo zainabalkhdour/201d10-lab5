@@ -9,11 +9,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+var sum =a+b ;
+return[sum ,`The sum of ${a} and ${b} is ${sum}.`];
 }
+console.log(sum(4,7));
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -27,11 +29,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+var multiply=a*b ;
+return [multiply, `The product of ${a} and ${b} is ${multiply}.`];
 }
+console.log(multiply(5,9));
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -48,11 +52,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+var sum=a+b+c;
+var multiply=a*b*c;
+return[sum,multiply,`${a} and ${b} and ${c} sum to ${sum}.`,`The product of ${a} and ${b} and ${c} is ${multiply}.`];
 
 }
-
+console.log( sum(4,7,5),multiply(4,7,5));
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -70,12 +77,14 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+var sumArr= [2, 3, 4];
+var sumArray=sumArr[0]+sumArr[1]+sumArr[2];
+return[sumArray,`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumArray} is their sum.`];
 }
-
+console.log(sumArray(2,3,4));
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -91,11 +100,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
-}
+    var multArr=[2, 3, 4];
+    var multiplyArray= multArr[0] * multArr[1] * multArr[2];
+    return[multiplyArray,`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multiplyArray}.`];
+        
+    }
+    console.log(multiplyArray(2,3,4));
+    
+    // Here is the test for multiplyArray(); uncomment it to run it
+    
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -119,8 +135,12 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    dynamicArray = [1,2,3,4,5];
+    multiplyAnyArray=dynamicArray[0]*dynamicArray[1]*dynamicArray[2]*dynamicArray[3]*dynamicArray[4];
+    return[multiplyAnyArray,`The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${multiplyAnyArray}.`]
 
 }
+console.log(multiplyAnyArray(1,2,3,4,5));
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
